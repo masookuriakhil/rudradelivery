@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rudra Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo-area">
+   <a href="index.html" class="logo">Rudra Delivery</a>
+    <div class="subtitle">Built for Safe &amp; Fast Delivery &mdash; Hyderabad</div>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  <nav id="mobileNav">
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#zones">Zones</a>
+    <a href="#contact">Contact</a>
+    <a
+      href="https://wa.me/8985841827"
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-btn"
+      >WhatsApp Book</a>
+  </nav>
+</header>
+<main>
+    <h1>Privacy Policy – Rudra Delivery</h1>
+    <p>we value your trust and are committed to protecting your personal information.</p>
+
+ <li>
+   <h2>Information We Collect</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Pickup &amp; delivery addresses</li>
+      <li>Contact details (name, phone number, email)</li>
+      <li>Parcel details (weight, size, description if provided)</li>
+    </ul>
+  </li>
+  <li>
+    <h2>How We Use Your Information</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>To process and complete your delivery request</li>
+      <li>To provide updates about your order status</li>
+      <li>For customer support and service improvements</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Data Protection</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>All customer information is kept strictly confidential.</li>
+      <li>We do not sell, rent, or share your data with third parties, except for delivery purposes.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Third-Party Access</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Rider/Delivery Partner will only receive necessary details (pickup, drop, contact number) to complete your delivery.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Data Retention</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Order-related information may be stored for operational and legal compliace</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Your Rights</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+        <li>You may request correction or deletion of your personal data by contacting us.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Policy Updates</h2>
+     <ul className="list-disc ml-6 mt-1 space-y-1">
+        <li>
+            This Privacy Policy may be updated from time to time. Changes will be posted on our official website.
+        </li>
+     </ul>
+  </li>
+  </main>
+
+<footer class="footer-flex">
+  <div class="footer-brand">
+    <b>Rudra Delivery</b>
+    <div class="footer-operator">Operated by Achyuta Technologies</div>
+    <div class="footer-copyright">&copy; 2025 Rudra Delivery. All rights reserved.</div>
+  </div>
+  <div class="footer-social-section">
+    <div class="footer-social-label">Follow Us On Social:</div>
+    <div class="footer-social-icons">
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/9515910897" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+  </div>
+  <div class="footer-links">
+    <a href="service.html" class="footer-link">
+      Service
+    </a>
+    <a href="terms.html" class="footer-link">
+     <!-- <span class="footer-arrow">&gt;</span> -->
+      Terms &amp; Conditions</a>
+    <a href="privacy.html" class="footer-link">
+      Privacy Policy</a>
+  </div>
+</footer>
+</body>
+<script>
+  // Smooth scroll for nav links
+  document.querySelectorAll('nav a').forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  function toggleMenu() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.toggle('open');
+}
+</script>
+</html>

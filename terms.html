@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rudra Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo-area">
+    <a href="index.html" class="logo">Rudra Delivery</a>
+    <div class="subtitle">Built for Safe &amp; Fast Delivery &mdash; Hyderabad</div>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+  <nav id="mobileNav">
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#zones">Zones</a>
+    <a href="#contact">Contact</a>
+    <a
+      href="https://wa.me/8985841827"
+      target="_blank"
+      rel="noopener"
+      class="whatsapp-btn"
+      >WhatsApp Book</a>
+  </nav>
+</header>
+<main>
+    <h1>Terms & Conditions – Rudra Delivery</h1>
+
+ <li>
+   <h2>Service Area</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Rudra Delivery provides local parcel delivery services within Hyderabad city limits.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Delivery Timeline</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Standard deliveries are completed within a few hours after pickup</li>
+      <li>Delivery times may vary due to weather, traffic, or unforeseen circumstances.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Pricing</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Flat ₹50 up to 5 km / 5 kg.</li>
+      <li>Additional charges may apply for higher weights or longer distances as per our pricing policy.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Packaging Responsibility</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+      <li>Customers must ensure their parcels are securely packed.</li>
+      <li>Rudra Delivery is not responsible for damages caused by improper packaging.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Prohibited Items</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+        <li>We do not transport illegal, hazardous, perishable, or restricted items (e.g., alcohol, flammable goods, sharp objects).</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Liability</h2>
+    <ul className="list-disc ml-6 mt-1 space-y-1">
+        <li>Rudra Delivery will handle parcels with utmost care.</li>
+        <li>In case of loss or damage due to our fault, compensation will be limited to the delivery fee paid.</li>
+    </ul>
+  </li>
+  <li>
+    <h2>Cancellations</h2>
+     <ul className="list-disc ml-6 mt-1 space-y-1">
+        <li>Orders once picked up cannot be cancelled.</li>
+        <li>Cancellation before pickup may incur a nominal fee.</li>
+     </ul>
+  </li>
+  <li>
+    <h2>Privacy</h2>
+     <ul className="list-disc ml-6 mt-1 space-y-1">
+       <li>Customer details (pickup, drop location, contact info) are used only for completing deliveries and kept strictly confidential.</li>
+     </ul>
+  </li>
+  <li>
+    <h2>Amendments</h2>
+     <ul className="list-disc ml-6 mt-1 space-y-1">
+       <li>Rudra Delivery reserves the right to update these Terms & Conditions at any time. Updated policies will be available on our website.</li>
+     </ul>
+  </li>
+  </main>
+<footer class="footer-flex">
+  <div class="footer-brand">
+    <b>Rudra Delivery</b>
+    <div class="footer-operator">Operated by Achyuta Technologies</div>
+    <div class="footer-copyright">&copy; 2025 Rudra Delivery. All rights reserved.</div>
+  </div>
+  <div class="footer-social-section">
+    <div class="footer-social-label">Follow Us On Social:</div>
+    <div class="footer-social-icons">
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/8985841827" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+  </div>
+  <div class="footer-links">
+    <a href="service.html" class="footer-link">
+      Service
+    </a>
+    <a href="terms.html" class="footer-link">
+     <!-- <span class="footer-arrow">&gt;</span> -->
+      Terms &amp; Conditions</a>
+    <a href="privacy.html" class="footer-link">
+      Privacy Policy</a>
+  </div>
+</footer>
+</body>
+<script>
+  // Smooth scroll for nav links
+  document.querySelectorAll('nav a').forEach((el) => {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  function toggleMenu() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.toggle('open');
+}
+</script>
+</html>
